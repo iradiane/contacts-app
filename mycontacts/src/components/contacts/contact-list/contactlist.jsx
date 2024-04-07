@@ -9,7 +9,7 @@ let ContactList = () => {
           <div className="grid">
             <div className="row">
               <div className="col">
-                <p className="h3">Contact Manager
+                <p className="h3 fw-bold">Contact Manager
                   <Link to={'/contacts/add'} className="btn btn-primary ms-2">
                     <i className="fa fa-plus-circle me-2" />
                     New</Link>
@@ -43,7 +43,46 @@ let ContactList = () => {
           <div className="col-md-6">
           <div className="card">
           <div className="card-body">
-            <div className="row align-items-center">
+            <div className="row align-items-center d-flex justify-content-around">
+            <div className="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhtFJc9v3hEBfhJiOhYMS_60ieEbiOjPJyxl8F2dIBw&s" alt="" className="img-fluid contact-img"/>
+            </div>
+            <div className="col-md-7 ">
+             <ul className="list-group">
+              <li className="list-group-item list-group-items-action">
+                Name :<span className="fw-bold">DIANE</span>
+
+              </li>
+              <li className="list-group-item list-group-items-action">
+                Mobile:<span className="fw-bold">+25078000000</span>
+
+              </li>
+              <li className="list-group-item list-group-items-action">
+                Email :<span className="fw-bold">iradu123@gmail.com</span>
+
+              </li>
+             </ul>
+            </div>
+            <div className="col-md-1 d-flex flex-column align-items-center">
+            <Link to={'/contacts/view/:contactId'} className="btn btn-warning my-1">
+              <i class="fa fa-eye"/>
+            </Link>
+            <Link to={'/contacts/edit/:contactId'} className="btn btn-primary my-1">
+              <i class="fa fa-pen"/>
+            </Link>
+            <button  className="btn btn-danger my-1">
+              <i class="fa fa-trash"/>
+            </button>
+            </div>
+            </div>
+        
+          </div>
+          </div>
+          </div>
+          <div className="col-md-6">
+          <div className="card">
+          <div className="card-body">
+            <div className="row align-items-center d-flex justify-content-around">
             <div className="col-md-4">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhtFJc9v3hEBfhJiOhYMS_60ieEbiOjPJyxl8F2dIBw&s" alt="" className="img-fluid contact-img"/>
             </div>
